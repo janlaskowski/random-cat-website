@@ -1,0 +1,14 @@
+img {
+    height: auto;
+    width: auto;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  button {
+    margin: 20px;
+  }
