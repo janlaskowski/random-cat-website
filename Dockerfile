@@ -12,7 +12,7 @@ RUN npm install
 # RUN npi ci --only=production
 
 #Bundle app source
-COPY . /app/
+COPY . .
 
 EXPOSE 8080
 

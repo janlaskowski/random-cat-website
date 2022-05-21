@@ -1,5 +1,5 @@
 img {
-    height: auto;
+    max-height: 200px;
     width: auto;
   }
   
@@ -11,4 +11,15 @@ img {
   
   button {
     margin: 20px;
+    color:black;
+    background-color: aquamarine;
+    border: 1px solid white;
+  }
+  button:hover{
+    color: aquamarine;
+    
+  }
+
+  body{
+    background-color: aqua;
   }
