@@ -1,5 +1,8 @@
 let btn = document.querySelector("#btn");
 let img = document.querySelector("#photo");
+const cors = require('cors');
+app.use(cors());
+app.options("*", cors());
 
 if(btn){
   btn.addEventListener("click", function() {
@@ -10,7 +13,7 @@ if(btn){
         img.src = JSON.parse(XHR.responseText).file;  
       }
     }
-    XHR.open("GET", "https://aws.random.cat/meow");
+    XHR.open("GET", "https://thecatapi.com/api/images/get?format=src&type=gif");
     XHR.send();
   });
 }

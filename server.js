@@ -1,8 +1,10 @@
 'use strict';
 
-
 const express = require('express');
+const cors = require('cors');
 const app = express();
+app.use(cors());
+app.options('*', cors());
 
 // Constants
 const PORT = 8080;
@@ -18,13 +20,6 @@ app.use('/js', express.static(__dirname + 'public/js'))
 app.get('', (req, res) =>{
     res.sendFile(__dirname + '/public/html/index.html')
 })
-
-// app.get('/', (req, res) => {
-//   res.send('Hello World');
-// });
-// app.get("/", (req, res) => {
-//     res.sendFile(__dirname + "/index.html")
-// })
 
 
 app.listen(PORT, HOST);
