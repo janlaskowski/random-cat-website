@@ -1,5 +1,5 @@
 # random-cat-website
-An website server that shows randomly generated cat🐱 images
+An website server that shows randomly generated cat🐱🐈 images
 
 The code for the website was taken from:
 https://codepen.io/Chanadian/pen/jxRWvg
